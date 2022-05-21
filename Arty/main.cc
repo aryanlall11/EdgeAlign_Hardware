@@ -154,7 +154,7 @@ int main()
 	static tflite::MicroErrorReporter micro_error_reporter;
 	error_reporter = &micro_error_reporter;
 
-	error_reporter->Report("STM32 Disco TFLite EdgeAlign");
+	error_reporter->Report("Arty TFLite EdgeAlign");
 
 	model = tflite::GetModel(edgealign_model_tflite);
 	if (model->version() != TFLITE_SCHEMA_VERSION)
